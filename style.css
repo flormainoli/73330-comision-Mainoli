@@ -1,0 +1,95 @@
+/*  variables generales */
+*{padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;}
+    h1{
+        font-size: 2.5rem;
+        font-family: "Playfair Display", serif;
+        }
+     
+        /*  menu */
+.navbar{
+
+    padding:2rem;
+    background-color: white;
+
+}
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.navbar li{
+    margin-right: 50px;
+}
+@media screen and (max-width:767px) {
+    .navbar-brand{display: none;
+}
+.navbar-brand img{
+    margin-left: 20px;
+} 
+
+
+}
+/*  banner */
+.banner{
+    background-image: url(./img/cabecera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+
+ /* estudios*/
+
+p .texto{
+    font-size: 35px;
+   margin: 150px 15% 150px 15%;
+   text-align: justify ;
+        font-family: "Montserrat", sans-serif    
+    }
+    /*  ubicacion */
+ 
+        /*  areas */
+        /*  area1 */
+  .card-custom-bg{
+   overflow: hidden;
+   margin: 150px auto 150px auto;
+}
+.card-custom-bg img{
+   flex:1;
+}
+.derecho-foto  {
+   display:block;
+ }
+.card-body{
+   flex:1;
+   padding:20px;
+   background-color: rgb(91, 116, 91);
+   margin: 60px auto 10px auto;
+}
+.card-body h2{
+margin-bottom: 10px;
+color:white;
+margin-top: 30px;
+letter-spacing: 0.8px;
+}
+.card-body p{ 
+   margin-bottom: 20px;
+   color:white;
+}
+
+
+ /*  contacto*/
+ .piedepagina{
+    background-image: url(img/piedepagina.jpg);
+      background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+}
+
+
