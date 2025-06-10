@@ -25,6 +25,13 @@
 .navbar li{
     margin-right: 50px;
 }
+.nav-link:hover{
+    color: black;
+}
+.btn-contacto:hover{
+    color:black;
+
+}
 @media screen and (max-width:767px) {
     .navbar-brand{display: none;
 }
@@ -35,6 +42,20 @@
 
 }
 /*  banner */
+.section1{
+    margin-bottom: 50px;
+    margin-top: 100px;
+
+}
+
+
+ .btn-banner a {
+    transition: color 0.3s ease; /* Suaviza la transición de color */
+  }
+
+  .btn-banner a:hover {
+    color: #000000 !important; /* Cambia a negro, ¡puedes elegir el color que quieras! */
+  }
 .banner{
     background-image: url(./img/cabecera.jpg);
     background-repeat: no-repeat;
@@ -42,45 +63,109 @@
     width: 100%;
     height: 80vh;
 }
-
+.banner-penal{
+    background-image: url(./img/derechopenalarea.jpg);
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.336);
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+.banner-familiar{
+    background-color: rgba(0, 0, 0, 0.575);
+    background-image: url(./img/derechofamiliararea.jpg);
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+.banner-laborall{
+    
+    background-image: url(./img/derecholaboralarea.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    width: 100%;
+    height: 80vh;
+}
+.banner-comercial{
+    background-image: url(./img/derechocomercialarea.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+.banner-civil{
+    background-image: url(./img/derechocivilarea.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+.banner-deportivo{
+    background-image: url(./img/derechodeportivoarea.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
  /* estudios*/
 
-p .texto{
+.biografia p{
     font-size: 35px;
-   margin: 150px 15% 150px 15%;
+     margin: 50px 15% 100px 15%;
    text-align: justify ;
         font-family: "Montserrat", sans-serif    
     }
     /*  ubicacion */
- 
+ #ubicacion h2{
+    margin-bottom: 50px;
+ }
+ .contenedor-caba{
+    border: 5px solid rgb(91, 116, 91);
+    border-radius: 13px;
+ margin-right: 100px;
+ }
+  .contenedor-provincia{
+    border: 5px solid rgb(91, 116, 91);
+    border-radius: 13px;
+    margin-left: 100px;
+ }
+
+   
         /*  areas */
         /*  area1 */
   .card-custom-bg{
    overflow: hidden;
    margin: 150px auto 150px auto;
+   border: none;
+   border-radius: 5px;
+ 
 }
 .card-custom-bg img{
    flex:1;
 }
-.derecho-foto  {
-   display:block;
- }
 .card-body{
    flex:1;
-   padding:20px;
+   padding:0;
    background-color: rgb(91, 116, 91);
-   margin: 60px auto 10px auto;
 }
-.card-body h2{
-margin-bottom: 10px;
-color:white;
-margin-top: 30px;
-letter-spacing: 0.8px;
+.btn-area{
+    background-color: rgba(168, 163, 163, 0.459);
+    border-radius:5px;
+    text-decoration: none; 
+    padding: 10px 15px 10px 15px;
+    font-size: 20px;
+    margin-bottom: 7px;
 }
-.card-body p{ 
-   margin-bottom: 20px;
-   color:white;
+
+.btn-area:hover{
+    background-color: rgba(0, 0, 0, 0.411);
 }
+
+   
+
 
 
  /*  contacto*/
@@ -91,5 +176,10 @@ letter-spacing: 0.8px;
     width: 100%;
     height: 70vh;
 }
-
+#contactame{
+    background-color:rgb(91, 116, 91);
+}
+.btn-contacto{
+     background-color:rgb(91, 116, 91)
+}
 

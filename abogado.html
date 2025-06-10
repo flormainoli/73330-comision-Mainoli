@@ -26,7 +26,7 @@
       </a>
       <ul class="navbar-nav d-flex justify-content-center- aling-items-center">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#inicio">INICIO</a>
+          <a class="nav-link" aria-current="page" href="#inicio">INICIO</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#estudios">ESTUDIOS</a>
@@ -41,12 +41,12 @@
     </div>
   </div>
 </nav> 
-<div class="section1  my-5">
+<div class="section1" id="inicio">
         <div class="container-fluid banner d-flex justify-content-center align-items-center" id="banner">
             <div class="row text-center mt-5">
                 <div class="col-12">
                     <h1 class="mb-3 text-white display-3">ARMANDO LUIS MAINOLI</h1>
-                    <button class="btn btn-outline-light mb-5 "><a href="#contacto" class="text-decoration-none text-white ">ENVIA TU CONSULTA</a></button>
+                    <button class="btn btn-banner btn-outline-light mb-5 " id="estudios"><a href="#contacto" class="text-decoration-none text-white ">ENVIA TU CONSULTA</a></button>
                 </div>
             </div>
         </div>
@@ -55,21 +55,21 @@
     <!--section 2-->
 <main>
 <!--section 3-->
-    <div id="texto"  class="m-5 d-flex justify-content-center"width="35" height="35">
-        <p class="text-justify text-black fs-3">Soy abogado, graduado de  la Universidad del Museo Social <br> Argentino hace más de 20 años, tanto en C.A.B.A como en Provincia. <br/>
-Ofrezco atención personalizada, confianza y claridad en cada paso<br> del proceso legal. </p>
+    <div   class="d-flex justify-content-center biografia">
+        <p class="text-justify text-black fs-3">Soy abogado, graduado de  la Universidad del Museo Social  Argentino hace más de 20 años, tanto en C.A.B.A como en Provincia. <br/>
+Ofrezco atención personalizada, confianza y claridad en cada paso del proceso legal. </p>
     </div>
 <!--section 4-->
     <div id="ubicacion">
-        <p class="display-5 mt-5 mb-3 text-black d-flex justify-content-center fw-semibold">¿En dónde te puedo defender?</p>
+        <h2 class="display-5 d-flex justify-content-center fw-semibold text-black">¿En dónde te puedo defender?</h2>
         <div class="buenosAires d-flex justify-content-center align-items-between">
-            <div class="contenedor-zona me-5 border border-3 border-success rounded">
-                <img src="img/caba.png" alt="Imagen geográfica de la Ciudad de Buenos Aires">
-                <p class="mt-3 text-center fw-bold mb-0">Ciudad Autónoma de <br>Buenos Aires</p>
+            <div class="contenedor-caba">
+                <img src="img/caba.png" class="rounded-3 p-2" alt="Imagen geográfica de la Ciudad de Buenos Aires">
+                <p class="mt-3 text-center fw-bold ">Ciudad Autónoma de <br>Buenos Aires</p>
             </div>
-            <div class="contenedor-zona ms-5  border border-3 border-success rounded-3">
-                 <img src="img/provincia.png"  alt="Imagen geográfica de la Provincia de Buenos Aires">
-                 <p class="text-center fw-bold mb-0">Provincia de<br> Buenos Aires</p>
+            <div class="contenedor-provincia">
+                 <img src="img/provincia.png"  class="rounded-3 p-2" alt="Imagen geográfica de la Provincia de Buenos Aires">
+                 <p class="mt-2 text-center fw-bold ">Provincia de<br> Buenos Aires</p>
             </div>
         </div>
     </div>
@@ -77,97 +77,97 @@ Ofrezco atención personalizada, confianza y claridad en cada paso<br> del proce
     <div id="areas" class="mt-5 d-flex justify-content-center align-items-center">
         <div class="row-6">
           <div class="container my-5">
-            <div class="card card-custom-bg mx-auto" style="max-width: 1200px;">
-                <div class="row g-0 align-items-center h-100">
-                    <div class="col-md-5  d-flex">
-                        <img src="img/derechopenal.jpg" class="img-fluid rounded-end " alt="Imagen ilustrativa de Derecho Penal" style="object-fit: cover; width: 100%; height: 100%;">
+            <div class="card card-custom-bg mx-auto " style="max-width: 850px;">
+                <div class="row g-0 align-items-stretch h-100 ">
+                    <div class="col-md-5  d-flex ">
+                        <img src="img/derechopenal.jpg" class="img-fluid rounded-start object-fit-cover w-100 h-100"  alt="Imagen ilustrativa de Derecho Penal" >
                     </div>
                      <div class="col-md-7 d-flex">
                          <div class="card-body d-flex flex-column justify-content-center align-items-center text-center h-100">
-                            <h1 class="card-title text-white fs-3 fw-bold">Derecho Penal</h1>
-                            <p class="card-text  lead ">Proporciono asesoramiento y respuestas sólidas, para una amplia gama de cargos, desde de delitos menores hasta delitos más graves.</p>
-                            <a href="penal.html"class="btn btn-secondary btn-lg rounded-3 " role="button" >VER MÁS </a>
+                            <h1 class="card-title text-white fs-1 fw-semibold mt-2 py-1">Derecho Penal</h1>
+                            <p class="card-text  lead text-white mb-3 py-3 ">Proporciono asesoramiento y respuestas sólidas, para una amplia gama de cargos, desde de delitos menores hasta delitos más graves.</p>
+                            <a href="penal.html"class="btn-area  text-decoration-none text-white " role="button">VER MÁS</a>
                         </div>
                     </div>
                 </div>
             </div>
           </div>
             <div class="container my-5">
-            <div class="card card-custom-bg mx-auto" style="max-width: 1200px;">
-                <div class="row g-0 align-items-center h-100">
+            <div class="card card-custom-bg mx-auto" style="max-width: 850px;">
+                <div class="row g-0 align-items-stretch h-100">
                   <div class="col-md-7 d-flex">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center text-center h-100">
-                        <h1 class="card-title fs-3 fw-bold text-white">Derecho Laboral</h1>
-                        <p class="card-text lead ">Proporciono asesoramiento y respuestas sólidas, para una amplia gama de cargos, desde de delitos menores hasta delitos más graves.</p>
-                        <a href="laboral.html"class="btn btn-secondary btn-lg rounded-3 " role="button" >VER MÁS </a>
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center text-center  h-100">
+                        <h1 class="card-title fs-1 fw-semibold text-white  mt-2 py-1" >Derecho Laboral</h1>
+                        <p class="card-text lead text-white mb-3 py-3 ">Proporciono asesoramiento tanto a personas físicas como a empresas, en diversas cuestiones vinculadas con las normas laborales</p>
+                        <a href="laboral.html" class="btn-area  text-decoration-none text-white " role="button">VER MÁS</a>
                     </div>
                   </div>
-                  <div class="col-md-5 d-flex">
-                    <img src="img/derecholaboral.jpg"  class="img-fluid rounded-end " alt="Imagen ilustrativa de Derecho Laboral"  style="object-fit: cover; width: 100%; height: 100%;">
+                  <div class="col-md-5 d-flex ">
+                    <img src="img/derecholaboral.jpg"  class="img-fluid rounded-end  object-fit-cover w-100 h-100" alt="Imagen ilustrativa de Derecho Laboral" >
                   </div>
                 </div>
               </div>
             </div>
             <div class="container my-5">
-            <div class="card card-custom-bg mx-auto" style="max-width: 1200px;">
-              <div class="row g-0 align-items-center h-100">
+            <div class="card card-custom-bg mx-auto" style="max-width: 850px;">
+              <div class="row g-0 align-items-stretch h-100">
                 <div class="col-md-5 d-flex">
-                  <img src="img/derechofamiliar.jpg" class="img-fluid rounded-start" alt="Imagen ilustrativa de Derecho familiar"  style="object-fit: cover; width: 100%; height: 100%;">
+                  <img src="img/derechofamiliar.jpg" class="img-fluid rounded-start object-fit-cover w-100 h-100" alt="Imagen ilustrativa de Derecho familiar">
                 </div>
                 <div class="col-md-7 d-flex">
                   <div class="card-body d-flex flex-column justify-content-center align-items-center text-center h-100" >
-                    <h1 class="card-title text-white fs-3 fw-bold">Derecho Familiar</h1>
-                    <p class="card-text  lead ">Proporciono asesoramiento y respuestas sólidas, para una amplia gama de cargos, desde de delitos menores hasta delitos más graves.</p>
-                    <a href="familiar.html"class="btn btn-secondary btn-lg rounded-3 " role="button">VER MAS </a>
+                    <h1 class="card-title text-white fs-1 fw-semibold  mt-2 py-2">Derecho Familiar</h1>
+                    <p class="card-text  lead text-white mb-3 py-3">Proporciono asesoramiento y representación a personas y/o familias en conflictos y asuntos relacionados con el derecho de familia</p>
+                    <a href="familiar.html" class="btn-area  text-decoration-none text-white " role="button">VER MÁS</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="container my-5">
-            <div class="card card-custom-bg mx-auto" style="max-width: 1200px;">
-              <div class="row g-0 align-items-center h-100">
+            <div class="card card-custom-bg mx-auto" style="max-width: 850px;">
+              <div class="row g-0 align-items-stretch h-100">
                 <div class="col-md-7 d-flex">
                   <div class="card-body d-flex flex-column justify-content-center align-items-center text-center h-100" >
-                    <h1 class="card-title text-white fs-3 fw-bold">Derecho Civil</h1>
-                    <p class="card-text text-center lead ">Proporciono asesoramiento y respuestas sólidas, para una amplia gama de cargos, desde de delitos menores hasta delitos más graves.</p>
-                    <a href="civil.html"class="btn btn-secondary btn-lg  rounded-3 " role="button" >VER MAS </a>
+                    <h1 class="card-title text-white fs-1 fw-semibold mt-2 py-2">Derecho Civil</h1>
+                    <p class="card-text  lead text-white mb-3 py-3">Proporciono asesoramiento para regular y defender las relaciones entre personas, ya sean físicas o jurídicas</p>
+                    <a href="civil.html"class="btn-area  text-decoration-none text-white " role="button">VER MÁS</a>
                   </div>
                 </div>
                 <div class="col-md-5 d-flex">
-                  <img src="img/derechocivil.jpg" class="img-fluid rounded-end " alt="Imagen ilustrativa de Derecho Penal">
+                  <img src="img/derechocivil.jpg" class="img-fluid rounded-end  object-fit-cover w-100 h-100" alt="Imagen ilustrativa de Derecho Penal">
                 </div>
               </div>
             </div>
           </div>
           <div class="container my-5">
-            <div class="card card-custom-bgmx-auto" style="max-width: 1200px;">
-              <div class="row g-0 align-items-center h-100">
+            <div class="card card-custom-bg mx-auto" style="max-width: 850px;">
+              <div class="row g-0 align-items-stretch h-100">
                 <div class="col-md-5 d-flex">
-                  <img src="img/derechocomercial.jpg"  class="img-fluid rounded-start" alt="Imagen ilustrativa de Derecho coomercial"  style="object-fit: cover; width: 100%; height: 100%;">
+                  <img src="img/derechocomercial.jpg"  class="img-fluid rounded-start  object-fit-cover w-100 h-100" alt="Imagen ilustrativa de Derecho coomercial"  >
                 </div>
                 <div class="col-md-7 d-flex">
                   <div class="card-body d-flex flex-column justify-content-center align-items-center text-center h-100" >
-                    <h1 class="card-title text-white fs-3 fw-bold">Derecho Comercial</h1>
-                    <p class="card-text  lead ">Proporciono asesoramiento y respuestas sólidas, para una amplia gama de cargos, desde de delitos menores hasta delitos más graves.</p>
-                    <a href="comercial.html"class="btn btn-secondary btn-lg rounded-3 " role="button" >VER MAS </a>
+                    <h1 class="card-title text-white fs-1 fw-semibold  mt-2 py-2">Derecho Comercial</h1>
+                    <p class="card-text  lead text-white mb-3 py-3">Proporciono asesoramiento y representación a deportistas, clubes, asociaciones, y otras entidades deportivas en asuntos legales</p>
+                    <a href="comercial.html"class="btn-area  text-decoration-none text-white " role="button">VER MÁS</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="container my-5">
-            <div class="card card-custom-bg mx-auto" style="max-width: 1200px;">
-              <div class="row g-0  align-items-center h-100">
+            <div class="card card-custom-bg mx-auto" style="max-width: 850px;">
+              <div class="row g-0  align-items-stretch h-100">
                 <div class="col-md-7 d-flex">
                   <div class="card-body d-flex flex-column justify-content-center align-items-center text-center h-100" >
-                    <h1 class="card-title text-white fs-3 fw-bold">Derecho Deportivo</h1>
-                    <p class="card-text  lead ">Proporciono asesoramiento y respuestas sólidas, para una amplia gama de cargos, desde de delitos menores hasta delitos más graves.</p>
-                    <a href="deportivo.html"class="btn btn-secondary btn-lg  rounded-3 " role="button" >VER MÁS </a>
+                    <h1 class="card-title text-white fs-1 fw-semibold mt-2 py-2 ">Derecho Deportivo</h1>
+                    <p class="card-text  lead text-white mb-3 py-3">Proporciono asesoramiento y respuestas sólidas, para una amplia gama de cargos, desde de delitos menores hasta delitos más graves.</p>
+                    <a href="deportivo.html"class="btn-area  text-decoration-none text-white " role="button">VER MÁS</a>
                   </div>
                 </div>
                 <div class="col-md-5 d-flex">
-                  <img src="img/derechodeportivo.jpg" class="img-fluid  rounded-end " alt="Imagen ilustrativa de Derecho deportivo" style="object-fit: cover; width: 100%; height: 100%;">
+                  <img src="img/derechodeportivo.jpg" class="img-fluid  rounded-end  object-fit-cover w-100 h-100" alt="Imagen ilustrativa de Derecho deportivo">
                 </div>
               </div>
             </div>
@@ -208,7 +208,7 @@ Ofrezco atención personalizada, confianza y claridad en cada paso<br> del proce
                 <textarea class="form-control" placeholder="Mensaje" id="floatingTextarea2" style="height: 100px"></textarea>
                 <label for="floatingTextarea2" class="ms-2">Mensaje</label>
             </div>
-            <div class="d-flex justify-content-center m-5"><button type="button" class="btn btn-secondary btn-lg" disabled>ENVIAR</button>
+            <div class="d-flex justify-content-center m-5"><button type="button" class="btn  btn-contacto btn-secondary btn-lg" disabled>ENVIAR</button>
             </div>
         </div>
       </div>
@@ -216,7 +216,7 @@ Ofrezco atención personalizada, confianza y claridad en cada paso<br> del proce
  </div>
 <!--section 7-->
 <footer>
-    <div id="contactame" class="container-fluid  bg-dark text-white py-3"> 
+    <div id="contactame" class="container-fluid  text-white py-3"> 
         <div class="row justify-content-center align-items-between">
             <div class="col-auto">
               <ul class="list-inline mb-0">
