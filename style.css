@@ -194,10 +194,7 @@
     font-size: 15px;
     padding: 10px 20px;
 }
-.dropdown-definiciones .dropdown-item:hover {
-    background-color: #007bff; 
-    color: white;
-}
+
 .dropdown-definiciones .btn.dropdown-toggle::after {
     display: none;
 }
