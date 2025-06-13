@@ -9,12 +9,10 @@
         font-family: "Playfair Display", serif;
         }
      
-        /*  menu */
+/* nav-bar */
 .navbar{
-
     padding:2rem;
     background-color: white;
-
 }
 .navbar-collapse {
     align-items: center;
@@ -28,120 +26,98 @@
 .nav-link:hover{
     color: black;
 }
-.btn-contacto:hover{
-    color:black;
-
-}
 @media screen and (max-width:767px) {
     .navbar-brand{display: none;
 }
 .navbar-brand img{
     margin-left: 20px;
 } 
-
-
 }
 /*  banner */
 .section1{
     margin-bottom: 50px;
     margin-top: 100px;
-
 }
-
-
- .btn-banner a {
-    transition: color 0.3s ease; /* Suaviza la transición de color */
-  }
-
-  .btn-banner a:hover {
-    color: #000000 !important; /* Cambia a negro, ¡puedes elegir el color que quieras! */
-  }
+.btn-banner a {
+    transition: color 0.3s ease;
+}
+.btn-banner a:hover {
+    color: #000000 !important;
+}
 .banner{
-    background-image: url(./img/cabecera.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/cabecera.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 80vh;
 }
+/*banner-areas*/
 .banner-penal{
-    background-image: url(./img/derechopenalarea.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./img/derechopenalarea.jpg);
     background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.336);
     background-size: cover;
     width: 100%;
     height: 80vh;
 }
 .banner-familiar{
-    background-color: rgba(0, 0, 0, 0.575);
-    background-image: url(./img/derechofamiliararea.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/derechofamiliararea.jpg);
     background-repeat: no-repeat;
-    
     background-size: cover;
     width: 100%;
     height: 80vh;
 }
-.banner-laborall{
-    
-    background-image: url(./img/derecholaboralarea.jpg);
+.banner-laboral{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./img/derecholaboralarea.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
     width: 100%;
     height: 80vh;
 }
 .banner-comercial{
-    background-image: url(./img/derechocomercialarea.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/derechocomercialarea.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 80vh;
 }
 .banner-civil{
-    background-image: url(./img/derechocivilarea.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./img/derechocivilarea.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 80vh;
 }
 .banner-deportivo{
-    background-image: url(./img/derechodeportivoarea.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/derechodeportivoarea.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 80vh;
 }
  /* estudios*/
-
-.biografia p{
-    font-size: 35px;
-     margin: 50px 15% 100px 15%;
-   text-align: justify ;
-        font-family: "Montserrat", sans-serif    
-    }
-    /*  ubicacion */
+.estudios p{
+     margin: 50px 15% 100px 15%;      
+}
+/*  ubicación */
  #ubicacion h2{
     margin-bottom: 50px;
  }
  .contenedor-caba{
     border: 5px solid rgb(91, 116, 91);
     border-radius: 13px;
- margin-right: 100px;
+    margin-right: 100px;
  }
-  .contenedor-provincia{
+.contenedor-provincia{
     border: 5px solid rgb(91, 116, 91);
     border-radius: 13px;
     margin-left: 100px;
  }
-
-   
-        /*  areas */
-        /*  area1 */
-  .card-custom-bg{
+ /*  areas */
+ .card-custom-bg{
    overflow: hidden;
    margin: 150px auto 150px auto;
    border: none;
    border-radius: 5px;
- 
 }
 .card-custom-bg img{
    flex:1;
@@ -159,19 +135,13 @@
     font-size: 20px;
     margin-bottom: 7px;
 }
-
 .btn-area:hover{
     background-color: rgba(0, 0, 0, 0.411);
 }
-
-   
-
-
-
  /*  contacto*/
  .piedepagina{
     background-image: url(img/piedepagina.jpg);
-      background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 70vh;
@@ -182,4 +152,52 @@
 .btn-contacto{
      background-color:rgb(91, 116, 91)
 }
+.btn-contacto:hover{
+    color:black;}
 
+ /* dropdown areas*/
+ .work-btn{
+    margin-top: 100px;
+    margin-bottom: 100px;
+ }
+ .dropdown-definiciones{
+    width: 60%;
+    max-width: 700px;
+ }
+ .dropdown-definiciones .btn.dropdown-toggle {
+    background-color: #f8f9fa; 
+    border-color: #dee2e6; 
+    color: #343a40; 
+    padding: 15px 20px; 
+    font-size: 25px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    border-radius: 9px;
+}
+.dropdown-definiciones .btn.dropdown-toggle:hover {
+    background-color: #e2e6ea; 
+    border-color: #dae0e5;
+}
+.dropdown-definiciones .btn.dropdown-toggle span {
+    flex-grow: 1; 
+    text-align: left;
+}
+.dropdown-definiciones .btn.dropdown-toggle i.bi-plus-lg {
+    font-size: 25px; 
+    margin-left: 10px; 
+}
+.dropdown-definicione.dropdown-menu {
+    width: 100%; 
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.dropdown-definiciones.dropdown-item {
+    font-size: 15px;
+    padding: 10px 20px;
+}
+.dropdown-definiciones .dropdown-item:hover {
+    background-color: #007bff; 
+    color: white;
+}
+.dropdown-definiciones .btn.dropdown-toggle::after {
+    display: none;
+}

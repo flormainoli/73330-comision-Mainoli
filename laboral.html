@@ -7,53 +7,113 @@
 <meta name="description" content="pagina web laboral de Armando Mainoli"/>
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <title> Armando Mainoli Abogado </title>
 </head>
 <body>
-   <!--section 1--> 
+<!--nav-bar--> 
 <header>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-Toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbar-Toggler">
-      <a class="navbar-brand ms-10" href="#">
-         <img src="img/logo.png" width="100" height="90" alt="Logo de la página web">
-      </a>
-      <ul class="navbar-nav d-flex justify-content-center- aling-items-center">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="abogado.html">INICIO</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="abogado.html#estudios">ESTUDIOS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="abogado.html#areas">AREAS</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="#contacto">CONTACTO</a>
-        </li>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-Toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-Toggler">
+        <a class="navbar-brand ms-10" href="laboral.html#banner">
+          <img src="img/logo.png" width="100" height="90" alt="Logo de la página web">
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center- aling-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="abogado.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="abogado.html#estudios">ESTUDIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="abogado.html#areas">AREAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> 
+<!--banner-->
+  <div class="section1  my-5">
+    <div class="container-fluid banner-laboral d-flex justify-content-center align-items-center" id="banner">
+      <div class="row text-center mt-5">
+        <div class="col-12">
+          <h1 class="mb-3 text-white display-1">DERECHO LABORAL</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--work-btn--> 
+<main>
+  <div class="d-flex flex-column align-items-center work-btn">
+    <div class="dropdown dropdown-definiciones mb-5">
+      <button class="btn  dropdown-toggle w-100 d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <span>Despidos</span>
+        <i class="bi bi-plus-lg"></i>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><p class="dropdown-item">Defensa al trabajador contra un despido laboral. La cual puede implicar, entre otras <br>cosas,<span class="fw-bold"> solicitar información detallada sobre la causa del despido, buscar otras<br> oportunidadesen la empresa, reclamar prestaciones por desempleo, o incluso<br> presentar una demanda justicia</p></span></li>
+      </ul>
+    </div>
+    <div class="dropdown dropdown-definiciones mb-5">
+      <button class="btn  dropdown-toggle w-100 d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+        <span>Indemnización</span>
+        <i class="bi bi-plus-lg"></i>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+        <li><p class="dropdown-item">Proteger los derechos y la posición de una persona que ha sido objeto de una<br>reclamación/demanda de indemnización. O la defensa de un/a  trabajador/a  frente a <br>un despido sin justa causa. Donde la indemnización es<span class="fw-bold"> la compensación económica<br>que el empleador debe pagar por la terminación del contrato.</span></p></li>
+      </ul>
+    </div>
+    <div class="dropdown dropdown-definiciones mb-5">
+      <button class="btn  dropdown-toggle w-100 d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+        <span>Acoso Laboral</span>
+        <i class="bi bi-plus-lg"></i>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+        <li><p class="dropdown-item">Defesa contra un delito moral para proteger al trabajador atentado por un<span class="fw-bold">conjunto<br> de comportamientos hostiles, reiterados y sistemáticos que una persona o gru-<br>po de personas ejercen sobre él/ella en su entorno laboral,</span> con la intención de<br>causar daño psicológico o emocional.</p></li>
+      </ul>
+    </div>
+    <div class="dropdown dropdown-definiciones mb-5">
+      <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between aling-items-center" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+        <span>Trabajo en Negro</span>
+        <i class="bi bi-plus-lg"></i>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+        <li><p class="dropdown-item">Defensa al trabajador con una relación laboral no debidamente registrada ante<br>los organismos estatales, lo que implica la vulneración de derechos del trabajador.<br>Por ejemplo,<span class="fw-bold"> no tiene aportes a la seguridad social, no tiene contrato laboral,<br>no se le pagan las indemnizaciones, no tiene protección ante accidentes o<br>enfermedades laborales.</span></p></li>
+      </ul>
+    </div>
+    <div class="dropdown dropdown-definiciones mb-5">
+      <button class="btn  dropdown-toggle w-100 d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
+        <span>Diferencia Salarial</span>
+        <i class="bi bi-plus-lg"></i>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+        <li><p class="dropdown-item">Asesoramiento al trabajador para  identificar y reclamar al empleador un <span class="fw-bold">salario<br>justo</span> frente a una diferencia salarial.</p></li>
+      </ul>
+    </div>
+    <div class="dropdown dropdown-definiciones mb-5">
+      <button class="btn  dropdown-toggle w-100 d-flex justify-content-between align-items-center" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false">
+        <span>Renuncia</span>
+        <i class="bi bi-plus-lg"></i>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
+        <li><p class="dropdown-item">Asesoramiento al trabajador durante su renuncia, para guiarlo/a ante las dudas sobre<br><span class="fw-bold">la validez de la misma,</span> como en casos de renuncia bajo presión o cuando se sospe-<br>cha que el empleador intenta simular la renuncia para evitar una indemnización por<br>despido. También para <span class="fw-bold">garantizar que se respeten sus derechos</span> obtener asesora-<br>miento sobre<span class="fw-bold"> tus obligaciones y beneficios</span> al momento de renunciar.</p></a></li>
       </ul>
     </div>
   </div>
-</nav> 
-<div class="section1  my-5">
-        <div class="container-fluid banner-laboral d-flex justify-content-center align-items-center" id="banner">
-            <div class="row text-center mt-5">
-                <div class="col-12">
-                    <h1 class="mb-3 text-white display-3">DERECHO LABORAL</h1>
-                    <button class="btn btn-outline-light mb-5 "><a href="abogado.html#contacto" class="text-decoration-none text-white ">ENVIA TU CONSULTA</a></button>
-                </div>
-            </div>
-        </div>
-</div>
-</header>
+</main>
+<!--footer--> 
 <footer>
-    <div id="contactame" class="container-fluid  bg-dark text-white py-3"> 
+    <div id="contactame" class="container-fluid  text-white py-3"> 
         <div class="row justify-content-center align-items-between">
             <div class="col-auto">
               <ul class="list-inline mb-0">
