@@ -16,8 +16,9 @@ h1{
 
 /* nav-bar */
 .navbar{
-    padding:2rem;
+    padding:1rem;
     background-color: variables.$white;
+    height: 5px;
     .navbar-collapse {
         align-items: center;
         justify-content: space-between;
