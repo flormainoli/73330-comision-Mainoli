@@ -42,10 +42,6 @@
   margin-bottom: 100px;
 }
 
-.dropdown-definiciones {
-  width: 60%;
-  max-width: 700px;
-}
 .dropdown-definiciones .btn.dropdown-toggle {
   background-color: #f8f9fa;
   border-color: #dee2e6;
@@ -55,7 +51,8 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 9px;
 }
-.dropdown-definiciones .btn.dropdown-toggle span {
+.dropdown-definiciones .btn.dropdown-toggle h2 {
+  font-size: 25px;
   flex-grow: 1;
   text-align: left;
 }
@@ -71,6 +68,7 @@
 .dropdown-definiciones .dropdown-item {
   font-size: 15px;
   padding: 10px 20px;
+  white-space: normal;
 }
 
 .dropdown-definiciones .btn.dropdown-toggle:hover {
@@ -106,6 +104,34 @@
   color: black;
 }
 
+[data-aos=fade-down] {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-duration: 3s;
+}
+
+[data-aos=zoom-in] {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-duration: 3s;
+}
+
+@media (max-width: 575.98px) {
+  .dropdown-definiciones .btn.dropdown-toggle {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+  .dropdown-definiciones .btn.dropdown-toggle h2 {
+    font-size: 1.2rem;
+  }
+  .dropdown-definiciones .btn.dropdown-toggle i.bi-plus-lg {
+    font-size: 18px;
+  }
+  .dropdown-definiciones .dropdown-item {
+    font-size: 13px;
+    padding: 8px 15px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -124,6 +150,7 @@ h1 {
 .navbar {
   padding: 2rem;
   background-color: white;
+  height: 100px;
 }
 .navbar .navbar-collapse {
   align-items: center;
@@ -196,15 +223,27 @@ h1 {
 #ubicacion h2 {
   margin-bottom: 50px;
 }
-#ubicacion .contenedor-caba {
+#ubicacion .contenedor-caba, #ubicacion .contenedor-provincia {
   border: 5px solid rgb(81, 116, 91);
   border-radius: 13px;
-  margin-right: 100px;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 360px;
+  height: 360px;
 }
-#ubicacion .contenedor-provincia {
-  border: 5px solid rgb(81, 116, 91);
-  border-radius: 13px;
-  margin-left: 100px;
+#ubicacion .contenedor-caba img, #ubicacion .contenedor-provincia img {
+  max-width: 400px;
+  height: 300px;
+}
+#ubicacion .contenedor-caba h3, #ubicacion .contenedor-provincia h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding: 15px 0;
+  line-height: 1.2;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,33 @@
+
+@media (max-width: 575.98px) {
+  .dropdown-definiciones {
+    .btn.dropdown-toggle {
+      padding: 10px 15px; 
+      font-size: 18px; 
+      h2 {
+        font-size: 1.2rem; 
+      }
+      i.bi-plus-lg {
+        font-size: 18px; 
+      }
+    }
+    .dropdown-item {
+      font-size: 13px; 
+      padding: 8px 15px; 
+    }
+  }
+}
+
+
+// @media (min-width: 768px) and (max-width: 991.98px) {
+//   .dropdown-definiciones {
+//     // Adjust styles for medium screens if needed
+//   }
+// }
+
+// Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {
+//   .dropdown-definiciones {
+//     // Keep your original large screen styles or fine-tune them here
+//   }
+// }

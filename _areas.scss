@@ -35,8 +35,6 @@ font-size: 55px;}
     margin-bottom: 100px;
  }
  .dropdown-definiciones{
-    width: 60%;
-    max-width: 700px;
     .btn.dropdown-toggle {
     background-color: #f8f9fa; 
     border-color: #dee2e6; 
@@ -45,7 +43,8 @@ font-size: 55px;}
     font-size: 25px; 
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
     border-radius: 9px;
-    span {
+    h2 {
+    font-size: 25px;
     flex-grow: 1; 
     text-align: left;}
     i.bi-plus-lg {
@@ -60,6 +59,7 @@ font-size: 55px;}
 }.dropdown-item {
     font-size: 15px;
     padding: 10px 20px;
+    white-space: normal;
 }
 }
  

@@ -3,12 +3,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="author" content="Florencia Mainoli">
-<meta name="keywords" content="abogado, Armando, Mainoli, legal"/>
-<meta name="description" content="pagina web laboral de Armando Mainoli"/>
+<meta name="keywords" content="abogado, Armando, Mainoli, legal, caja de abogados, Buenos Aires, abogado penal"/>
+<meta name="description" content="Abogado Armando Mainoli especialización en derecho penal"/>
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/x-icon" href="img/logoicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -48,7 +49,7 @@
     <div class="container-fluid banner-penal d-flex justify-content-center align-items-center" id="banner">
       <div class="row text-center mt-5">
         <div class="col-12">
-          <h1 class="mb-3 text-white display-1 animate__animated animate__fadeInDown">DERECHO PENAL</h1>
+          <h1 class="mb-3 text-white display-1 " data-aos="fade-down">DERECHO PENAL</h1>
         </div>
       </div>
     </div>
@@ -57,62 +58,73 @@
 <!--work-btn--> 
 <main>
   <div class="d-flex flex-column align-items-center work-btn">
-    <div class="dropdown dropdown-definiciones mb-5">
-      <button class="btn dropdown-toggle w-100  d-flex justify-content-between aling-items-center animate__animated animate__fadeInTopLeft" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-        <span>Defensas y Querellas Penales</span>
-        <i class="bi bi-plus-lg"></i>
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <li><p class="dropdown-item">La defensa  es para cumplir el derecho de un acusado a ser representado por un abogado<br>y a contradecir las acusaciones en su contra. Mientras que la querella es para la persona<br>afectada por un delito, para ejercer la acción penal contra el presunto responsable.<br>A diferencia de la denuncia que solo notifica la comisión del delito</p></li>
-      </ul>
+    <div class="col-12 col-md-8 col-lg-6">
+      <div class="dropdown dropdown-definiciones mb-5">
+        <button class="btn dropdown-toggle w-100  d-flex justify-content-between aling-items-center" data-aos="fade-up-left" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <h2>Defensas y Querellas Penales</h2>
+          <i class="bi bi-plus-lg"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><p class="dropdown-item">La defensa  es para cumplir el derecho de un acusado a ser representado por un abogado y a contradecir las acusaciones en su contra. Mientras que la querella es para la persona afectada por un delito, para ejercer la acción penal contra el presunto responsable. A diferencia de la denuncia que solo notifica la comisión del delito</p></li>
+        </ul>
+      </div>
     </div>
-    <div class="dropdown dropdown-definiciones mb-5">
-      <button class="btn dropdown-toggle w-100 d-flex justify-content-between align-items-center animate__animated animate__fadeInTopRight" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-        <span>Delitos Sexuales</span>
-        <i class="bi bi-plus-lg"></i>
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-        <li><p class="dropdown-item">Defensa para las personas atentadas contra su libertad sexual, su consentimiento,<br> su dignidad o su desarrollo sexual. Como por ejemplo:<span class="fw-bold">Abuso sexual, agresión sexual,<br> acoso sexual, exhibición obscena, difusión de imágenes pornográficas no consenti-<br>das.</span></p></li>
-      </ul>
+    <div class="col-12 col-md-8 col-lg-6">
+      <div class="dropdown dropdown-definiciones mb-5">
+        <button class="btn dropdown-toggle w-100 d-flex justify-content-between align-items-center" data-aos="fade-up-right" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <h2>Delitos Sexuales</h2>
+           <i class="bi bi-plus-lg"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><p class="dropdown-item">Defensa para las personas atentadas contra su libertad sexual, su consentimiento, su dignidad o su desarrollo sexual. Como por ejemplo:<span class="fw-bold">Abuso sexual, agresión sexual, acoso sexual, exhibición obscena, difusión de imágenes pornográficas no consentidas.</span></p></li>
+        </ul>
+      </div>
     </div>
-    <div class="dropdown dropdown-definiciones mb-5">
-      <button class="btn  dropdown-toggle w-100 d-flex justify-content-between align-items-center  animate__animated animate__fadeInTopLeft" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-        <span>Delitos contra la Vida y la Integridad Sexual</span>
-        <i class="bi bi-plus-lg"></i>
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-        <li><p class="dropdown-item">Defensa para las víctimas que fueron atentadas directamente contra su vida, su integri-<br>dad física o psicológica. Ya sea<span class="fw-bold"> homicidio, lesiones, tortura o  secuestro con fines se-<br>xuales</span></p></li>
-      </ul>
+    <div class="col-12 col-md-8 col-lg-6">
+      <div class="dropdown dropdown-definiciones mb-5">
+        <button class="btn  dropdown-toggle w-100 d-flex justify-content-between align-items-center" data-aos="fade-up-left" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+          <h2>Delitos contra la Vida y la Integridad Sexual</h2>
+          <i class="bi bi-plus-lg"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+          <li><p class="dropdown-item">Defensa para las víctimas que fueron atentadas directamente contra su vida, su integridad física o psicológica. Ya sea<span class="fw-bold"> homicidio, lesiones, tortura o  secuestro con fines sexuales</span></p></li>
+        </ul>
+      </div>
     </div>
-    <div class="dropdown dropdown-definiciones mb-5">
-      <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between aling-items-center animate__animated animate__fadeInTopRight" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
-        <span>Delitos contra la Salud y Lesiones </span>
-        <i class="bi bi-plus-lg"></i>
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
-        <li><p class="dropdown-item">Defensa para las víctimas  que sufrieron acciones que causaron  daños a su integridad<br> física o mental. Como por ejemplo:<span class="fw-bold">mutilación, fractura o inhabilitación para el trabajo.</span></p></li>
-      </ul>
+    <div class="col-12 col-md-8 col-lg-6">
+      <div class="dropdown dropdown-definiciones mb-5">
+        <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between aling-items-center" data-aos="fade-up-right" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+          <h2>Delitos contra la Salud y Lesiones </h2>
+          <i class="bi bi-plus-lg"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+          <li><p class="dropdown-item">Defensa para las víctimas  que sufrieron acciones que causaron  daños a su integridad física o mental. Como por ejemplo:<span class="fw-bold">mutilación, fractura o inhabilitación para el trabajo.</span></p></li>
+        </ul>
+      </div>
     </div>
-    <div class="dropdown dropdown-definiciones mb-5">
-      <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between aling-items-center  animate__animated animate__fadeInTopLeft" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
-        <span>Delitos Financieros</span>
-        <i class="bi bi-plus-lg"></i>
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
-        <li><p class="dropdown-item">Defensa para aquellos delitos que se comenten en el ámbito financiero o económico.<br>Como por ejemplo:<span class="fw-bold">blanqueo de capitales, evasión fiscal, soborno,fraude bancario,<br>manipulación de mercados o delito de intermediación financiera no autorizada.</span></p></li>
-      </ul>
+    <div class="col-12 col-md-8 col-lg-6">
+      <div class="dropdown dropdown-definiciones mb-5">
+        <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between aling-items-center" data-aos="fade-up-left" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
+          <h2>Delitos Financieros</h2>
+          <i class="bi bi-plus-lg"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+          <li><p class="dropdown-item">Defensa para aquellos delitos que se comenten en el ámbito financiero o económico.Como por ejemplo:<span class="fw-bold">blanqueo de capitales, evasión fiscal, soborno,fraude bancario, manipulación de mercados o delito de intermediación financiera no autorizada.</span></p></li>
+        </ul>
+      </div>
     </div>
-    <div class="dropdown dropdown-definiciones mb-5 animate__animated animate__fadeInTopRight">
-      <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between aling-items-center" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false">
-        <span>Delitos Patrimoniales</span>
-        <i class="bi bi-plus-lg"></i>
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
-        <li><p class="dropdown-item">Defensa a las víctimas atentadas contra su propiedad y patrimonio. Por ejemplo:<br><span class="fw-bold"> robo, estafa, hurto, abuso de confianza, fraude, extorsión o daños de bienes.</span></p></li>
-      </ul>
+    <div class="col-12 col-md-8 col-lg-6">
+      <div class="dropdown dropdown-definiciones mb-5">
+        <button class="btn btn-secondary dropdown-toggle w-100 d-flex justify-content-between aling-items-center" data-aos="fade-up-right" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false">
+          <h2>Delitos Patrimoniales</h2>
+          <i class="bi bi-plus-lg"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
+          <li><p class="dropdown-item">Defensa a las víctimas atentadas contra su propiedad y patrimonio. Por ejemplo:<span class="fw-bold"> robo, estafa, hurto, abuso de confianza, fraude, extorsión o daños de bienes.</span></p></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</main>
+  </main>
 <!--footer--> 
 <footer>
     <div id="contactame" class="container-fluid  text-white py-3 "> 
@@ -135,6 +147,10 @@
         </div>
       </div>
 </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

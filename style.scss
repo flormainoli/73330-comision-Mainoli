@@ -2,6 +2,8 @@
 @use'areas';
 @use'contacto';
 @use 'extend';
+@use 'animaciones';
+@use 'mediaquerie';
 
 *{padding: 0;
     margin: 0;
@@ -16,9 +18,9 @@ h1{
 
 /* nav-bar */
 .navbar{
-    padding:1rem;
+    padding:2rem;
     background-color: variables.$white;
-    height: 5px;
+    height: 100px;
     .navbar-collapse {
         align-items: center;
         justify-content: space-between;
@@ -50,6 +52,7 @@ h1{
     @extend %base-banner;
     background-image: variables.$gradient,url(./img/cabecera.jpg); 
 }
+
 /*banner-areas*/
 .banner-penal{
     @extend %base-banner;
@@ -91,10 +94,28 @@ h1{
   border: $border-val; 
   border-radius: $radius-val; }
  #ubicacion{
-    h2{margin-bottom: 50px;}
-   .contenedor-caba{
-    @include border-style( variables.$border, variables.$radius); 
-    margin-right: 100px;}
-  .contenedor-provincia{
-    @include border-style( variables.$border, variables.$radius); 
-    margin-left: 100px;}}
+    h2{
+        margin-bottom: 50px;
+    }
+   .contenedor-caba,.contenedor-provincia
+   { @include border-style( variables.$border, variables.$radius); 
+     display: flex; 
+     padding: 1rem;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+     max-width:360px;
+     height: 360px;
+    img{ max-width: 400px;
+        height:300px
+    }
+    h3{font-size: 1.5rem;
+      margin-top: 10px; 
+      margin-bottom: 0;
+      padding: 15px 0;
+      line-height: 1.2; 
+    
+} 
+}
+
+ }
