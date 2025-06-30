@@ -4,6 +4,7 @@
   margin: 150px auto 150px auto;
   border: none;
   border-radius: 5px;
+  max-width: 1000px;
 }
 .card-custom-bg img {
   flex: 1;
@@ -116,6 +117,17 @@
   transition-duration: 3s;
 }
 
+@media screen and (max-width: 992px) {
+  .navbar-brand img {
+    display: none;
+  }
+  .collapse {
+    background-color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 0%;
+  }
+}
 @media (max-width: 575.98px) {
   .dropdown-definiciones .btn.dropdown-toggle {
     padding: 10px 15px;
@@ -159,18 +171,16 @@ h1 {
   margin-left: 100px;
 }
 .navbar .navbar-collapse li {
+  font-weight: 700px;
   margin-right: 50px;
-}
-.navbar .navbar-collapse .navbar-brand img {
-  margin-left: 20px;
 }
 .navbar .navbar-collapse .nav-link:hover {
   color: black;
+  font-weight: 700px;
 }
-@media screen and (max-width: 767px) {
-  .navbar .navbar-brand {
-    display: none;
-  }
+.navbar .navbar-brand img {
+  margin-left: 100px;
+  margin-right: 200px;
 }
 
 /*  banner */
@@ -220,8 +230,13 @@ h1 {
 }
 
 /*  ubicación */
+#ubicacion {
+  padding: 1rem;
+}
 #ubicacion h2 {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  padding: 1rem;
+  text-align: center;
 }
 #ubicacion .contenedor-caba, #ubicacion .contenedor-provincia {
   border: 5px solid rgb(81, 116, 91);
@@ -230,18 +245,19 @@ h1 {
   padding: 1rem;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   max-width: 360px;
   height: 360px;
 }
 #ubicacion .contenedor-caba img, #ubicacion .contenedor-provincia img {
-  max-width: 400px;
+  max-width: 360px;
   height: 300px;
 }
 #ubicacion .contenedor-caba h3, #ubicacion .contenedor-provincia h3 {
   font-size: 1.5rem;
-  margin-top: 10px;
-  margin-bottom: 0;
+  margin-top: 0px;
+  margin-bottom: 2px;
   padding: 15px 0;
   line-height: 1.2;
 }
