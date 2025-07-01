@@ -2,7 +2,6 @@
 @use'areas';
 @use'contacto';
 @use 'extend';
-@use 'animaciones';
 @use 'mediaquerie';
 
 *{padding: 0;
@@ -26,11 +25,10 @@ h1{
         margin-right: 100px;
         margin-left: 100px;
         li{
-            font-weight: 700px;
             margin-right: 50px;}
         .nav-link:hover{
             color: black;
-            font-weight: 700px;}
+            }
         }
        .navbar-brand img{
             margin-left: 100px;
