@@ -1,34 +1,35 @@
-@use'variables';
-.card-custom-bg{
-   overflow: hidden;
-   margin: 150px auto 150px auto;
-   border: none;
-   border-radius: 5px;
-   max-width: 1000px;
-   img{flex:1;}
-   .card-body{
-   flex:1;
-   padding:0;
-   background-color: variables.$primary-color;
-   height: 350px;
-   h1{padding: 15px;
-    margin:10px auto 0 auto; 
-font-size: 55px;}
-   p{padding: 15px;;
-    margin:5px auto 15px auto;
-    font-size: 20px;
-   }
-   .btn-area{
-    background-color: rgba(155, 154, 154, 0.781);
-    border-radius:5px;
-    text-decoration: none; 
-    padding: 15px;
-    font-size: 20px;
-    margin-bottom: 15px;}
-    .btn-area:hover{
-    background-color: rgba(0, 0, 0, 0.534);
+@use 'variables';
+@use 'extend';
+/*banner-areas*/
+.banner-penal{
+    @extend %base-banner;
+    background-image: variables.$gradient,url(../img/derechopenalarea.jpg);
+   
 }
+.banner-familiar{
+    @extend %base-banner;
+    background-image: variables.$gradient, url(../img/derechofamiliararea.jpg);
+    
 }
+.banner-laboral{
+    @extend %base-banner;
+    background-image: variables.$gradient,url(../img/derecholaboralarea.jpg);
+    
+}
+.banner-comercial{
+    @extend %base-banner;
+    background-image:variables.$gradient , url(../img/derechocomercialarea.jpg);
+    
+}
+.banner-civil{
+    @extend %base-banner;
+    background-image: variables.$gradient, url(../img/derechocivilarea.jpg);
+    
+}
+.banner-deportivo{
+     @extend %base-banner;
+    background-image: variables.$gradient, url(../img/derechodeportivoarea.jpg);
+   
 }
  /* dropdown areas*/
  .work-btn{
@@ -45,7 +46,7 @@ font-size: 55px;}
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
     border-radius: 9px;
     h2 {
-    font-size: 25px;
+    font-size: 22px;
     flex-grow: 1; 
     text-align: left;}
     i.bi-plus-lg {

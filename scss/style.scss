@@ -1,6 +1,5 @@
-@use'variables';
+@use 'variables';
 @use'areas';
-@use'contacto';
 @use 'extend';
 @use 'mediaquerie';
 
@@ -9,7 +8,11 @@
     text-decoration: none;
     list-style: none;
     font-family: "Montserrat", sans-serif;
-    color:black;}
+    color:black;
+}
+body{
+    overflow-x: hidden;
+}
 h1{
     font-size: 2.5rem;
     font-family: "Playfair Display", serif;
@@ -46,44 +49,45 @@ h1{
 }
 .banner-principal{
     @extend %base-banner;
-    background-image: variables.$gradient,url(./img/cabecera.jpg); 
-}
-/*banner-areas*/
-.banner-penal{
-    @extend %base-banner;
-    background-image: variables.$gradient,url(./img/derechopenalarea.jpg);
-   
-}
-.banner-familiar{
-    @extend %base-banner;
-    background-image: variables.$gradient, url(./img/derechofamiliararea.jpg);
-    
-}
-.banner-laboral{
-    @extend %base-banner;
-    background-image: variables.$gradient,url(./img/derecholaboralarea.jpg);
-    
-}
-.banner-comercial{
-    @extend %base-banner;
-    background-image:variables.$gradient , url(./img/derechocomercialarea.jpg);
-    
-}
-.banner-civil{
-    @extend %base-banner;
-    background-image: variables.$gradient, url(./img/derechocivilarea.jpg);
-    
-}
-.banner-deportivo{
-     @extend %base-banner;
-    background-image: variables.$gradient, url(./img/derechodeportivoarea.jpg);
-   
+    background-image: variables.$gradient,url(../img/cabecera.jpg); 
 }
  /* estudios*/
 .estudios 
 { p{
      margin: 50px 15% 100px 15%;      
 }}
+/* areas-cards*/
+.card-custom-bg{
+   overflow: hidden;
+   margin: 150px auto 150px auto;
+   border: none;
+   border-radius: 5px;
+   max-width: 1000px;
+   img{flex:1;}
+   .card-body{
+   flex:1;
+   padding:0;
+   background-color: variables.$primary-color;
+   height: 350px;
+   h1{padding: 15px;
+    margin:10px auto 0 auto; 
+font-size: 55px;}
+   p{padding: 15px;;
+    margin:5px auto 15px auto;
+    font-size: 20px;
+   }
+   .btn-area{
+    background-color: rgba(155, 154, 154, 0.781);
+    border-radius:5px;
+    text-decoration: none; 
+    padding: 15px;
+    font-size: 20px;
+    margin-bottom: 15px;}
+    .btn-area:hover{
+    background-color: rgba(0, 0, 0, 0.534);
+}
+}
+}
 /*  ubicación */
 @mixin border-style( $border-val, $radius-val){ 
   border: $border-val; 
@@ -117,3 +121,17 @@ h1{
 } 
 }
  }
+ /*pie-de-pagina*/
+ .piedepagina{
+    @extend %base-banner;
+    height: 70vh;
+    background-image: variables.$gradient, url(../img/piedepagina.jpg);
+}
+#contactame{
+    background-color: variables.$primary-color;
+}
+.btn-contacto{
+     background-color: variables.$primary-color;
+}
+.btn-contacto:hover{
+    color:black;}
