@@ -90,8 +90,8 @@ font-size: 55px;}
 }
 /*  ubicación */
 @mixin border-style( $border-val, $radius-val){ 
-  border: $border-val; 
-  border-radius: $radius-val; }
+  border: $border-val !important;
+  border-radius: $radius-val !important; }
  #ubicacion{
     padding: 1rem;
     h2{
@@ -121,7 +121,6 @@ font-size: 55px;}
 } 
 }
  }
- /*pie-de-pagina*/
  .piedepagina{
     @extend %base-banner;
     height: 70vh;
@@ -129,9 +128,37 @@ font-size: 55px;}
 }
 #contactame{
     background-color: variables.$primary-color;
+    margin-top: 120px;
 }
 .btn-contacto{
      background-color: variables.$primary-color;
 }
 .btn-contacto:hover{
-    color:black;}
+    color:black;} 
+/*reviews*/
+.reviews-title{
+    background-color: variables.$primary-color;
+    color: variables.$white;
+    margin-top: 200px;
+    margin-bottom: 120px;
+ }
+.reviews{
+    overflow-x: auto; 
+    flex-wrap: nowrap; 
+    padding-bottom: 15px;
+    .reviews-box{
+        height: 250px;
+        width: 16rem;
+        @include border-style( variables.$border, variables.$radius);
+        margin-left: 25px;
+        margin-right: 25px;
+        flex-shrink: 0;
+        .user{
+            border-radius: 50%;
+            width: 80px; }
+            }
+        form button {
+            margin-top: auto; 
+            display: none; 
+        }
+        }

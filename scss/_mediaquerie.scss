@@ -9,6 +9,9 @@
       margin: 0px;
       padding: 0%;
     }
+    .reviews{
+      flex-wrap: nowrap;
+    }
   }
 // mediaquerie-areas-definiciones// 
 @media (max-width: 575.98px) {
@@ -29,4 +32,5 @@
     }
   }
 }
+
 
