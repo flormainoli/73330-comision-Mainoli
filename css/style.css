@@ -76,10 +76,13 @@
 }
 
 @media screen and (max-width: 992px) {
-  .navbar-brand img {
+  .navbar {
+    padding: 0%;
+  }
+  .navbar .navbar-brand img {
     display: none;
   }
-  .collapse {
+  .navbar .collapse {
     background-color: white;
     text-align: center;
     margin: 0px;
@@ -239,6 +242,7 @@ h1 {
   line-height: 1.2;
 }
 
+/*pie-de-página*/
 .piedepagina {
   height: 70vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/piedepagina.jpg);
@@ -284,8 +288,8 @@ h1 {
   width: 80px;
 }
 .reviews form button {
-  margin-top: auto; /* Push button to the bottom */
-  display: none; /* Initially hidden */
+  margin-top: auto;
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
