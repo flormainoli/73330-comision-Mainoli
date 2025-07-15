@@ -69,20 +69,10 @@ h1{
    padding:0;
    background-color: variables.$primary-color;
    height: 350px;
-   h1{padding: 15px;
-    margin:10px auto 0 auto; 
-font-size: 55px;}
-   p{padding: 15px;;
-    margin:5px auto 15px auto;
-    font-size: 20px;
-   }
    .btn-area{
     background-color: rgba(155, 154, 154, 0.781);
     border-radius:5px;
-    text-decoration: none; 
-    padding: 15px;
-    font-size: 20px;
-    margin-bottom: 15px;}
+    text-decoration: none; }
     .btn-area:hover{
     background-color: rgba(0, 0, 0, 0.534);
 }
@@ -157,9 +147,15 @@ font-size: 55px;}
         .user{
             border-radius: 50%;
             width: 80px; }
-            }
+        .card-text {
+         max-height: 100px; 
+         overflow-y: auto;
+         white-space: normal;
+         word-wrap: break-word;
+        }
         form button {
             margin-top: auto; 
-            display: none; 
+            display: none;
         }
     }
+}
